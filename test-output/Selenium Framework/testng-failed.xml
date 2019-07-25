@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium Framework]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="utilities.Reporting"/>
+  </listeners>
+  <test name="GURU 99(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC_LoginTest_001">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_LoginTest_001 -->
+      <class name="testCases.TC_LoginDDT_002">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loginDDT" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- testCases.TC_LoginDDT_002 -->
+      <class name="testCases.TC_AddCustomerTest_003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_AddCustomerTest_003 -->
+    </classes>
+  </test> <!-- GURU 99(failed) -->
+</suite> <!-- Failed suite [Selenium Framework] -->
