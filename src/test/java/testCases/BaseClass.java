@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -35,7 +36,7 @@ public class BaseClass {
 	@BeforeClass
 	public void setup(String br)
 	{			
-		logger = Logger.getLogger("ebanking");
+		logger = Logger.getLogger("Selenium FrameEWork");
 		PropertyConfigurator.configure("Log4j.properties");
 		
 		if(br.equals("chrome"))
@@ -83,4 +84,7 @@ public class BaseClass {
 		String generatedString2 = RandomStringUtils.randomNumeric(4);
 		return (generatedString2);
 	}
+	
+	
+	
 }

@@ -40,7 +40,7 @@ public class Reporting  extends TestListenerAdapter{
 		extent.setSystemInfo("Environemnt","QA");
 		extent.setSystemInfo("user","Neelima");
 		
-		htmlReporter.config().setDocumentTitle("InetBanking Test Project"); // Tile of report
+		htmlReporter.config().setDocumentTitle("Selenium FrameWork Report"); // Tile of report
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 		htmlReporter.config().setTheme(Theme.DARK);

@@ -1,2 +1,3 @@
-cd C:\Users\admin\myworkspace\inetBankingV1
+cd C:\Users\Neelima\eclipse-workspace\Selenium_FrameWork
+
 mvn clean install
